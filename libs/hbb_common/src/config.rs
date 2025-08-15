@@ -1565,6 +1565,7 @@ impl PeerConfig {
 
     fn default_options() -> HashMap<String, String> {
         let mut mp: HashMap<String, String> = Default::default();
+        mp.insert(OPTION_ALLOW_REMOTE_CONFIG_MODIFICATION.to_owned(), "Y".to_owned());
         [
             keys::OPTION_CODEC_PREFERENCE,
             keys::OPTION_CUSTOM_FPS,
